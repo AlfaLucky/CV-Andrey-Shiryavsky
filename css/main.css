@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200');
+
+html {
+    --main-text-color: #fff;
+    --text-thin: 200;
+    --link-decoration-underline-color: #777;
+    --link-hover-color: #de9673;
+    --vertical-indent: 2vh;
+    --horizontal-indent: .5em;
+
+    height: 100%;
+    background: 0 0/cover url(../img/bg-full-size.jpg) no-repeat;
+}
+
+body {
+    font-family: 'Montserrat', 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 var(--horizontal-indent);
+    color: var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--vertical-indent) 0;
+    font-weight: var(--text-thin);
+}
+
+header a {
+    margin: .5em 1em;
+    text-transform: uppercase;
+    transition: color .3s;
+}
+
+header a:hover {
+    color: var(--link-hover-color);
+}
+
+footer {
+    padding: var(--vertical-indent) 0;
+    text-align: right;
+    font-weight: var(--text-thin);
+    line-height: 150%;
+}
+
+footer a {
+    text-decoration: underline var(--link-decoration-underline-color);
+}
