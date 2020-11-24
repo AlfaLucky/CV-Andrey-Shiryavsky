@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Checklist for Game Insight</title>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/main.css">
+     <script src="/js/script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+
+<body>
+     <div id="page">
+          <h1>Checklist for Game Insight</h1>
+          
+     <div class="progress-container">
+          <div id="progress"><div id="progress-text"></div></div>
+     </div>
+
+     <h2>Установка</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Чистая установка билда.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Обновление билда.
+          </div>
+     </div>
+     <h2>Загрузочный экран</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Обновляется версия рекламного SDK(Если я неошибаюсь).
+          </div>
+     </div>
+
+     <h2>Окно задания</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Прогресс игрока перенесен из версии в версию без расхождений.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Наличие всех основных иконок и UI.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Плюшки начисляються посредством получения "бонусов".
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Бонусы или валюта начисляеться игроку после просмотра "рекламы".
+          </div>
+     </div>
+
+     <h2>Магазин</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Наличие всех основных иконок и UI.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Покупка(кейсов, внешности, ганбаксы и бонусы) за игровую валюту.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Покупка(золота) за реальные деньги.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Покупка при нехватки игровой валюты.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Покупка при нехватки реальных денег.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+              Общие мобильные кейсы: работа с прерываниями, сворот/разворот на основных экранах, работа с системными кнопками.
+          </div>
+     </div>
+     
+     <h2>Основной (core) геймплей</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Геймплейная составляющая: управление игроком по средствам стика, взаимодействия коллижн модели с объектами, управление камерой, стрельба по игроку, взаимодействие с гранатой, взаимодействие с холодным оружием, использование аптечек, перезарядка, смена оружия, вызов меню, закончить матч по средствам победы или проигрыша.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Общей мобильные кейсы: работа с прерываниями, сворот/разворот на основных экранах, работа с системными кнопками.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Наличие звуковых банок.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Работы с соединением: отключение интернета, имитация плохого соединения (throttling), активное переключение между режимами мобильной связи и wifi.
+          </div>
+     </div>
+
+     <h2>Групповой бой</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Участники добавляются.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Выход в бой в составе группы участников.
+          </div>
+     </div>
+
+     <h2>Окна результатов матча</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Наличие всех основных иконок и UI.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Начисление бонусов за матч соответствуют описанным в результатах.
+          </div>
+     </div>
+
+     <h2>Окно Арсенала</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Наличие всех основных иконок и UI.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Экипировать оружие, броню, голову, ноги.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Улучшить оружие.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Купить(оружие, броню, голову, ноги) за ганбаксы.
+          </div>
+     </div>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Купить(снаряжение(атака), снаряжение(поддержка), дорны, перки) за золото.
+          </div>
+     </div>
+
+     <h2>Клан</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Друзья</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Рейтинг</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Почта</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Расписание</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Видео</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+
+     <h2>Режим наблюдателя</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+     
+     <h2>Профиль</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Вкладка открывается, информация отображается.
+          </div>
+     </div>
+     <h2>Остальные</h2>
+     <div class="item">
+          <div class="box">
+               <select>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Skipped</option>
+                    <option>Blocked</option>
+               </select>
+          </div>
+          <div class="text">
+               Реклама отображаеться и вызываться после определенных событий игры и корректно отрабатывает, начисляя бонусы или валюту игроку после ее просмотра.
+          </div>
+     </div>
+</body>
+
+</html>
