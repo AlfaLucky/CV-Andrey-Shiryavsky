@@ -1,511 +1,226 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-     <title>Checklist for Game Insight</title>
-     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="./css/main.css">
-     <script src="/js/script.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Interview Questions and Answers</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-     <div id="page">
-          <h1>Checklist for Game Insight</h1>
-          
-     <div class="progress-container">
-          <div id="progress"><div id="progress-text"></div></div>
-     </div>
+    <div class="container">
+        <h1>QA Interview Questions and Answers</h1>
 
-     <h2>Установка</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Чистая установка билда.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Обновление билда.
-          </div>
-     </div>
-     <h2>Загрузочный экран</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Обновляется версия рекламного SDK(Если я неошибаюсь).
-          </div>
-     </div>
+        <h2>1. Расскажите о самом интересном баге, который вы встречали</h2>
+        <p>
+            В одной из игр я столкнулся с багом, связанным с некорректным отображением интерфейса инвентаря. Игроки жаловались, что после открытия инвентаря некоторые предметы исчезали, а при закрытии и повторном открытии они появлялись снова.
+        </p>
+        <p>
+            <strong>Технически:</strong> баг был вызван неправильной обработкой данных на клиенте. При открытии инвентаря происходила десинхронизация между клиентом и сервером из-за ошибки в сортировке массивов предметов. Сервер отправлял корректные данные, но клиент интерпретировал их неправильно, из-за чего некоторые предметы временно «исчезали». Решение заключалось в исправлении сортировки и оптимизации кода клиентской части.
+        </p>
 
-     <h2>Окно задания</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Прогресс игрока перенесен из версии в версию без расхождений.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Наличие всех основных иконок и UI.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Плюшки начисляються посредством получения "бонусов".
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Бонусы или валюта начисляеться игроку после просмотра "рекламы".
-          </div>
-     </div>
+        <h2>2. Чем привлекает работа в нашем отделе и почему хочется связать своё будущее с нами?</h2>
+        <p>
+            Работа в вашем отделе привлекает возможностью стать частью команды, которая развивает успешный проект Rush Royale с глобальным признанием. Меня вдохновляет шанс работать над игрой, сочетающей tower defense и карточные механики, и сотрудничать с профессионалами в международной команде. Возможность удаленной работы и открытость к новым идеям делают позицию особенно привлекательной. Хочу внести свой вклад в развитие проекта и применить свои навыки в сильной и амбициозной команде.
+        </p>
 
-     <h2>Магазин</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Наличие всех основных иконок и UI.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Покупка(кейсов, внешности, ганбаксы и бонусы) за игровую валюту.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Покупка(золота) за реальные деньги.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Покупка при нехватки игровой валюты.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Покупка при нехватки реальных денег.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-              Общие мобильные кейсы: работа с прерываниями, сворот/разворот на основных экранах, работа с системными кнопками.
-          </div>
-     </div>
-     
-     <h2>Основной (core) геймплей</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Геймплейная составляющая: управление игроком по средствам стика, взаимодействия коллижн модели с объектами, управление камерой, стрельба по игроку, взаимодействие с гранатой, взаимодействие с холодным оружием, использование аптечек, перезарядка, смена оружия, вызов меню, закончить матч по средствам победы или проигрыша.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Общей мобильные кейсы: работа с прерываниями, сворот/разворот на основных экранах, работа с системными кнопками.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Наличие звуковых банок.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Работы с соединением: отключение интернета, имитация плохого соединения (throttling), активное переключение между режимами мобильной связи и wifi.
-          </div>
-     </div>
+        <h2>3. Каким вы видите процесс продвижения по карьерной лестнице и повышения зарплаты в нашей компании?</h2>
+        <p>
+            Я вижу карьерный рост как результат сочетания профессиональных достижений, активного участия в развитии компании и постоянного расширения своих знаний и навыков. Например, после успешного внедрения автоматизации процессов, повышения покрытия автотестами и оптимизации тестовой инфраструктуры, я бы хотел претендовать на повышение роли в команде, став Lead Automation Engineer. В долгосрочной перспективе я стремлюсь к позиции Head of QA, чтобы развивать стратегию тестирования и управление качеством на уровне всей компании. Повышение зарплаты, на мой взгляд, должно быть напрямую связано с реальным вкладом в развитие проектов, достижением ключевых целей команды и ростом моего профессионального уровня.
+        </p>
 
-     <h2>Групповой бой</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Участники добавляются.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Выход в бой в составе группы участников.
-          </div>
-     </div>
+        <h2>4. Сколько часов в неделю вы готовы посвящать работе?</h2>
+        <p>
+            Готов посвящать работе 40 часов в неделю. В случае дедлайнов или релизов возможна переработка с моим предварительным уведомлением.
+        </p>
 
-     <h2>Окна результатов матча</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Наличие всех основных иконок и UI.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Начисление бонусов за матч соответствуют описанным в результатах.
-          </div>
-     </div>
+        <h2>Игровые вопросы</h2>
 
-     <h2>Окно Арсенала</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Наличие всех основных иконок и UI.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Экипировать оружие, броню, голову, ноги.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Улучшить оружие.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Купить(оружие, броню, голову, ноги) за ганбаксы.
-          </div>
-     </div>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Купить(снаряжение(атака), снаряжение(поддержка), дорны, перки) за золото.
-          </div>
-     </div>
+        <h3>1. Проведите тестирование начального этапа игры Rush Royale</h3>
+        <p>
+            Тестирование можно разбить на следующие этапы:
+        </p>
+        <ul>
+            <li><strong>Запуск игры:</strong> проверить скорость загрузки, корректность отображения экранов загрузки, логику проверки интернет-соединения.</li>
+            <li><strong>Ввод имени игрока:</strong> протестировать длину, допустимые символы, обработку ошибок (например, использование недопустимых символов).</li>
+            <li><strong>Туториал:</strong> проверить плавность переходов, корректность работы подсказок, анимаций, проверку на повторное прохождение.</li>
+            <li><strong>Попадание в главное лобби:</strong> проверить работоспособность UI элементов, их отображение и адаптацию под разные экраны.</li>
+        </ul>
 
-     <h2>Клан</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+        <h3>2. ММОРПГ: тестирование абилки "Чума"</h3>
+        <ul>
+            <li><strong>Функциональность:</strong>
+                <ul>
+                    <li>Заражение одного игрока (выдача дебаффа).</li>
+                    <li>Распространение эффекта на других игроков при соблюдении условий (радиус 10 м, 3 секунды).</li>
+                    <li>Снятие дебаффа способностью очищения.</li>
+                    <li>Урон или лечение (зависит от расы).</li>
+                </ul>
+            </li>
+            <li><strong>Баланс:</strong>
+                <ul>
+                    <li>Проверка корректного урона (10 HP/сек).</li>
+                    <li>Хил для нежити (10 HP/сек).</li>
+                </ul>
+            </li>
+            <li><strong>Граничные случаи:</strong>
+                <ul>
+                    <li>Проверка эффектов при нестабильном соединении.</li>
+                    <li>Сценарии взаимодействия при массовом заражении игроков.</li>
+                </ul>
+            </li>
+            <li><strong>Визуализация:</strong> отображение дебаффа (иконка, таймер), визуальные и звуковые эффекты заражения.</li>
+        </ul>
 
-     <h2>Друзья</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+        <h3>3. Автоматизация проверок абилки "Чума"</h3>
 
-     <h2>Рейтинг</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+        <h3>1. Юнит-тесты</h3>
+        <p>Юнит-тесты проверяют основную функциональность абилки:</p>
+        <ul>
+            <li>Заражение игрока.</li>
+            <li>Распространение заражения на других игроков.</li>
+            <li>Лечение персонажей-нежити.</li>
+            <li>Снятие дебаффа.</li>
+        </ul>
+        <code>
+using NUnit.Framework;
 
-     <h2>Почта</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+[TestFixture]
+public class PlagueAbilityTests
+{
+    [Test]
+    public void Test_PlayerGetsInfected()
+    {
+        var player = new Player();
+        var ability = new PlagueAbility();
 
-     <h2>Расписание</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+        ability.Infect(player);
 
-     <h2>Видео</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
+        Assert.IsTrue(player.IsInfected, "Player should be infected.");
+    }
 
-     <h2>Режим наблюдателя</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
-     
-     <h2>Профиль</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Вкладка открывается, информация отображается.
-          </div>
-     </div>
-     <h2>Остальные</h2>
-     <div class="item">
-          <div class="box">
-               <select>
-                    <option>Passed</option>
-                    <option>Failed</option>
-                    <option>Skipped</option>
-                    <option>Blocked</option>
-               </select>
-          </div>
-          <div class="text">
-               Реклама отображаеться и вызываться после определенных событий игры и корректно отрабатывает, начисляя бонусы или валюту игроку после ее просмотра.
-          </div>
-     </div>
+    [Test]
+    public void Test_PlagueSpreadsToNearbyPlayers()
+    {
+        var player1 = new Player { Position = new Vector3(0, 0, 0) };
+        var player2 = new Player { Position = new Vector3(5, 0, 0) };
+
+        var ability = new PlagueAbility();
+        ability.Infect(player1);
+        ability.Update(3);
+
+        Assert.IsTrue(player2.IsInfected, "Nearby player should be infected.");
+    }
+}
+        </code>
+
+        <h3>2. Интеграционные тесты</h3>
+        <p>Интеграционные тесты проверяют работу абилки в игровом окружении:</p>
+        <code>
+using UnityEngine;
+using UnityEngine.TestTools;
+using NUnit.Framework;
+using System.Collections;
+
+public class PlagueIntegrationTests
+{
+    [UnityTest]
+    public IEnumerator Test_PlagueSpreadInScene()
+    {
+        var player1 = Object.Instantiate(Resources.Load<GameObject>("Player1")).GetComponent<Player>();
+        var player2 = Object.Instantiate(Resources.Load<GameObject>("Player2")).GetComponent<Player>();
+
+        player1.transform.position = new Vector3(0, 0, 0);
+        player2.transform.position = new Vector3(5, 0, 0);
+
+        var ability = new PlagueAbility();
+        ability.Infect(player1);
+
+        yield return new WaitForSeconds(3);
+
+        Assert.IsTrue(player2.IsInfected, "Player2 should be infected after 3 seconds.");
+    }
+}
+        </code>
+
+        <h3>3. Сбор логов и их анализ</h3>
+        <p>Логи можно использовать для отслеживания поведения абилки:</p>
+        <code>
+public void Infect(Player player)
+{
+    player.IsInfected = true;
+    Debug.Log($"Player {player.Id} infected at {Time.time}");
+}
+        </code>
+        <p>Пример скрипта на Python для анализа логов:</p>
+        <code>
+import re
+
+log_file = "game_logs.txt"
+with open(log_file, "r") as file:
+    logs = file.readlines()
+
+infection_logs = [log for log in logs if "infected" in log]
+print(f"Total infections: {len(infection_logs)}")
+        </code>
+
+        <h3>4. Стресс-тестирование</h3>
+        <p>Проверка работы абилки в массовых сценариях:</p>
+        <code>
+public class PlagueStressTest : MonoBehaviour
+{
+    public int NumberOfPlayers = 100;
+    private List<Player> players = new List<Player>();
+
+    void Start()
+    {
+        for (int i = 0; i < NumberOfPlayers; i++)
+        {
+            var player = Instantiate(Resources.Load<GameObject>("PlayerPrefab")).GetComponent<Player>();
+            player.transform.position = new Vector3(i * 2, 0, 0);
+            players.Add(player);
+        }
+
+        var plague = new PlagueAbility();
+        plague.Infect(players[0]);
+    }
+
+    void Update()
+    {
+        foreach (var player in players)
+        {
+            Debug.Log($"Player {player.Id} - Infected: {player.IsInfected}");
+        }
+    }
+}
+        </code>
+
+        <h3>5. Инструменты редактора</h3>
+        <p>Разработка инструментов редактора Unity для быстрой настройки и тестирования:</p>
+        <code>
+using UnityEditor;
+using UnityEngine;
+
+[CustomEditor(typeof(PlagueAbility))]
+public class PlagueEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+
+        PlagueAbility plague = (PlagueAbility)target;
+        if (GUILayout.Button("Test Infect"))
+        {
+            plague.TestInfect();
+        }
+    }
+}
+        </code>
+
+        <h3>6. Интеграция в CI/CD</h3>
+        <p>Автоматический запуск всех тестов с использованием Unity Test Framework и CI/CD систем, таких как GitHub Actions или Jenkins.</p>
+
+        <h3>4. Автоматизация проверки PlayerItem в Unity</h3>
+        <p>Решение задачи доступно в <a href="https://github.com/AlfaLucky/TestProject" target="_blank">GitHub репозитории</a>.</p>
+    </div>
 </body>
-
 </html>
