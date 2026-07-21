@@ -20,14 +20,6 @@ html {
     page-break-inside: avoid;
 }
 
-.content .sidebar .-title {
-    margin-right: -.25em;
-}
-
-.content .sidebar .contact .icon {
-    margin-left: .5em;
-}
-
-.content .sidebar .education h3 {
-    font-size: 1.1em;
+header.hero .info .name {
+    letter-spacing: .1em;
 }

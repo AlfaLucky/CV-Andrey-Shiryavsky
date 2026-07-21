@@ -4,29 +4,28 @@
         margin: .2em 0;
     }
 
-    header .info .name {
-        margin: .1em 0;
+    header.hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 1.2em 0;
     }
 
-    header .info .position {
-        margin: .1em 0;
+    header.hero .info {
+        text-align: center;
     }
 
-    header .info .separator {
-        margin: .4em auto;
+    header.hero .info .name {
+        letter-spacing: .12em;
+        font-size: 1.45em;
+    }
+
+    header.hero .info .header-contacts {
+        justify-content: center;
     }
 
     .content {
         flex-direction: column-reverse;
-    }
-
-    .content .sidebar .asset {
-        margin-bottom: 1.5em;
-    }
-
-    .content .sidebar .contact .asset,
-    .content .sidebar .education .asset {
-        margin-bottom: 1em;
     }
 
     .content .main {
@@ -42,27 +41,19 @@
         letter-spacing: .2em;
     }
 
-    header .info {
-        white-space: nowrap;
+    header.hero {
+        gap: 1.25em;
+        padding: 1em 0;
     }
 
-    header .info .name {
-        margin: .1em 0;
+    header.hero .photo {
+        flex-basis: 5.5em;
+        width: 5.5em;
+        height: 5.5em;
     }
 
-    header .info .position {
-        margin: .1em 0;
-    }
-
-    header .info .separator {
-        margin: .4em auto;
-    }
-    .content .sidebar .asset {
-        margin-bottom: 1.5em;
-    }
-
-    .content .sidebar .contact .asset,
-    .content .sidebar .education .asset {
-        margin-bottom: 1em;
+    header.hero .info .name {
+        letter-spacing: .1em;
+        font-size: 1.35em;
     }
 }
