@@ -38,7 +38,7 @@
   and (max-device-width: 812px)
   and (orientation: landscape) {
     .-title {
-        letter-spacing: .2em;
+        letter-spacing: .05em;
     }
 
     header.hero {

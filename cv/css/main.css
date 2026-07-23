@@ -3,8 +3,8 @@ html {
     --light-highlight: #505050;
     --dark-highlight: #262626;
 
-    --title-letter-spacing: .5em;
-    --negate-title-letter-spacing: -.5em;
+    --title-letter-spacing: .06em;
+    --negate-title-letter-spacing: -.06em;
 
     border-top: 2em solid var(--highlight);
 }
@@ -21,7 +21,8 @@ a {
     color: var(--dark-highlight);
     text-transform: uppercase;
     letter-spacing: var(--title-letter-spacing);
-    font-weight: normal;
+    font-weight: 600;
+    font-size: 1.15em;
 }
 .-text {
     text-align: justify;
@@ -56,7 +57,10 @@ a {
 
 body {
     margin: 0 5vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Source Sans 3', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -139,7 +143,8 @@ header.hero .info .header-contacts a:hover {
 }
 .content .main .about .about-subheading {
     margin: 1.5em 0 .5em;
-    font-weight: normal;
+    font-weight: 600;
+    font-size: 1.05em;
     text-transform: uppercase;
     letter-spacing: var(--title-letter-spacing);
     color: var(--dark-highlight);
