@@ -1,59 +1,38 @@
-@media screen
-  and (orientation: portrait) {
-    .-title {
-        margin: .2em 0;
-    }
-
-    header.hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 1em;
-        padding: 1.2em 0;
-    }
-
-    header.hero .info {
-        text-align: center;
-    }
-
-    header.hero .info .name {
-        letter-spacing: .12em;
-        font-size: 1.45em;
-    }
-
-    header.hero .info .header-contacts {
-        justify-content: center;
-    }
-
-    .content {
-        flex-direction: column-reverse;
-    }
-
-    .content .main {
-        padding-right: 0;
-    }
+@media (max-width: 900px) {
+    .brand-role, .nav-link { display: none; }
+    .hero { grid-template-columns: 120px minmax(0, 1fr); padding: 2rem; }
+    .photo .image { width: 120px; height: 120px; }
+    .content .main { grid-template-columns: 1fr; }
+    .about { position: static; }
+    .experience { grid-row: 1; }
 }
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (orientation: landscape) {
-    .-title {
-        letter-spacing: .05em;
-    }
+@media (max-width: 640px) {
+    body { font-size: 15px; }
+    .nav-inner, .resume-shell { width: min(100% - 28px, 1180px); }
+    .nav-inner { min-height: 62px; gap: .5rem; }
+    .brand { gap: 0; }
+    .brand-mark { width: 34px; height: 34px; }
+    .nav-actions { gap: .2rem; }
+    .language-link { padding: .5rem; }
+    .nav-actions .button { min-height: 38px; padding: .58rem .72rem; font-size: .82rem; }
+    .resume-shell { margin-top: 20px; margin-bottom: 34px; }
+    .hero { grid-template-columns: 1fr; justify-items: start; padding: 1.5rem; gap: 1.25rem; border-radius: 14px; }
+    .photo .image { width: 92px; height: 92px; border-width: 4px; }
+    .photo::after { right: -4px; width: 24px; height: 24px; border-width: 4px; }
+    .name { font-size: 2.05rem; }
+    .header-contacts { display: grid; grid-template-columns: 1fr; margin-top: 1rem; gap: .35rem; }
+    .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
+    .career-facts { grid-template-columns: 1fr 1fr; padding: .9rem; }
+    .fact { padding: .7rem; border-right: 0; border-bottom: 1px solid var(--line); }
+    .fact:nth-child(odd) { border-right: 1px solid var(--line); }
+    .fact:nth-last-child(-n+2) { border-bottom: 0; }
+    .about, .experience { padding: 1.35rem; border-radius: 14px; }
+    .experience > .asset { margin-left: 5px; padding-left: 1.35rem; }
+    .experience .asset > p:not(.description):last-of-type { display: block; }
+}
 
-    header.hero {
-        gap: 1.25em;
-        padding: 1em 0;
-    }
-
-    header.hero .photo {
-        flex-basis: 5.5em;
-        width: 5.5em;
-        height: 5.5em;
-    }
-
-    header.hero .info .name {
-        letter-spacing: .1em;
-        font-size: 1.35em;
-    }
+@media (max-width: 370px) {
+    .language-link { display: none; }
+    .hero-actions { grid-template-columns: 1fr; }
 }
