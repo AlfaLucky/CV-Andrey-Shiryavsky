@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>QA-проекты — Андрей Ширявский</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="QA-инструменты Андрея Ширявского: Smart API Chaos Tester для контролируемой проверки отказоустойчивости API и AI Bug Investigator для локального анализа логов и подготовки баг-репортов.">
+        <link rel="canonical" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects-ru.html">
+        <link rel="alternate" hreflang="en" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects.html">
+        <link rel="alternate" hreflang="ru" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects-ru.html">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/main.css?v=projects-20261108">
+        <link rel="stylesheet" href="./css/media.css?v=projects-20261108">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Перейти к проектам</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+            <div class="nav-inner">
+                <a class="brand" href="./index-ru.html" aria-label="Андрей Ширявский — начало резюме">
+                    <span class="brand-mark" aria-hidden="true">AS</span>
+                    <span class="brand-role">QA Engineer</span>
+                </a>
+                <div class="nav-actions">
+                    <div class="section-tabs" aria-label="Разделы портфолио">
+                        <a class="nav-tab" href="./index-ru.html">Резюме</a>
+                        <a class="nav-tab is-active" href="./projects-ru.html" aria-current="page">Проекты</a>
+                    </div>
+                    <a class="nav-link" href="https://github.com/alfalucky">GitHub</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/alfalucky/">LinkedIn</a>
+                    <a class="language-link" href="./projects.html" lang="en" hreflang="en" aria-label="Open projects in English">EN</a>
+                    <a class="button button-primary" href="./pdf/Andrey-Shiryavsky-CV-RU.pdf" download>Скачать PDF</a>
+                </div>
+            </div>
+        </nav>
+        <main class="resume-shell projects-shell" id="main-content">
+            <header class="projects-hero">
+                <div>
+                    <p class="eyebrow">Портфолио · QA-инструменты</p>
+                    <h1 class="projects-title">Проекты</h1>
+                    <p class="projects-intro">Практические инструменты, которые превращают сценарии отказов и диагностические данные в воспроизводимые результаты для QA.</p>
+                </div>
+                <a class="button button-secondary" href="./index-ru.html">Открыть резюме</a>
+            </header>
+
+            <section class="project-grid" aria-label="QA-проекты">
+                <article class="project-card">
+                    <div class="project-card-topline">
+                        <span class="project-number" aria-hidden="true">01</span>
+                        <span class="project-status"><span aria-hidden="true"></span>Рабочая демо-версия</span>
+                    </div>
+                    <p class="project-kicker">Тестирование отказоустойчивости API</p>
+                    <h2>Smart API Chaos Tester</h2>
+                    <p class="project-description">Безопасный local-first инструмент для запуска детерминированных сценариев отказа на разрешённом API и сбора фактических результатов его реакции.</p>
+                    <ul class="project-features">
+                        <li>Импортирует OpenAPI-описание или использует настроенный вручную запрос;</li>
+                        <li>Моделирует ответы HTTP 500/429, тайм-ауты, задержки, повреждённые данные, обрывы соединения и ошибки авторизации;</li>
+                        <li>Проверяет базовые ожидания и сохраняет историю запусков.</li>
+                    </ul>
+                    <div class="project-meta" aria-label="Технологические направления">
+                        <span>API</span><span>Chaos testing</span><span>HTTP/REST</span>
+                    </div>
+                    <p class="project-attribution">Разработано Андреем Ширявским</p>
+                    <a class="button button-primary project-link" href="https://smart-api-chaos-tester-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Открыть Smart API Chaos Tester в новой вкладке">Открыть демо <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-topline">
+                        <span class="project-number" aria-hidden="true">02</span>
+                        <span class="project-status"><span aria-hidden="true"></span>Рабочая демо-версия</span>
+                    </div>
+                    <p class="project-kicker">Анализ логов и баг-репорты</p>
+                    <h2>AI Bug Investigator</h2>
+                    <p class="project-description">Ориентированный на приватность QA-помощник: локально анализирует текстовые логи, находит ошибки, объединяет повторы и формирует структурированный баг-репорт.</p>
+                    <ul class="project-features">
+                        <li>Принимает текстовые логи в UTF-8 размером до 5 МБ и содержит готовый демонстрационный сценарий;</li>
+                        <li>Группирует повторяющиеся ошибки, упрощая анализ результатов;</li>
+                        <li>Может дополнительно улучшить отчёт локальной моделью Ollama, не отправляя лог в облачный сервис.</li>
+                    </ul>
+                    <div class="project-meta" aria-label="Технологические направления">
+                        <span>Анализ логов</span><span>Локальный AI</span><span>Баг-репорты</span>
+                    </div>
+                    <p class="project-attribution">Разработано Андреем Ширявским</p>
+                    <a class="button button-primary project-link" href="https://ai-bug-investigator-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Открыть AI Bug Investigator в новой вкладке">Открыть демо <span aria-hidden="true">↗</span></a>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

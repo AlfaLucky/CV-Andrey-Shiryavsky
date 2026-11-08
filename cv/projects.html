@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>QA Projects — Andrey Shiryavsky</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="QA tools developed by Andrey Shiryavsky: Smart API Chaos Tester for controlled API failure testing and AI Bug Investigator for local log analysis and bug-report preparation.">
+        <link rel="canonical" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects.html">
+        <link rel="alternate" hreflang="en" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects.html">
+        <link rel="alternate" hreflang="ru" href="https://alfalucky.github.io/CV-Andrey-Shiryavsky/cv/projects-ru.html">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/main.css?v=projects-20261108">
+        <link rel="stylesheet" href="./css/media.css?v=projects-20261108">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to projects</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <div class="nav-inner">
+                <a class="brand" href="./index.html" aria-label="Andrey Shiryavsky — CV home">
+                    <span class="brand-mark" aria-hidden="true">AS</span>
+                    <span class="brand-role">QA Engineer</span>
+                </a>
+                <div class="nav-actions">
+                    <div class="section-tabs" aria-label="Portfolio sections">
+                        <a class="nav-tab" href="./index.html">CV</a>
+                        <a class="nav-tab is-active" href="./projects.html" aria-current="page">Projects</a>
+                    </div>
+                    <a class="nav-link" href="https://github.com/alfalucky">GitHub</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/alfalucky/">LinkedIn</a>
+                    <a class="language-link" href="./projects-ru.html" lang="ru" hreflang="ru" aria-label="Открыть проекты на русском языке">RU</a>
+                    <a class="button button-primary" href="./pdf/Andrey-Shiryavsky-CV-EN.pdf" download>Download PDF</a>
+                </div>
+            </div>
+        </nav>
+        <main class="resume-shell projects-shell" id="main-content">
+            <header class="projects-hero">
+                <div>
+                    <p class="eyebrow">Portfolio · QA tooling</p>
+                    <h1 class="projects-title">Projects</h1>
+                    <p class="projects-intro">Practical tools that turn failure scenarios and raw diagnostic data into reproducible QA evidence.</p>
+                </div>
+                <a class="button button-secondary" href="./index.html">View CV</a>
+            </header>
+
+            <section class="project-grid" aria-label="QA projects">
+                <article class="project-card">
+                    <div class="project-card-topline">
+                        <span class="project-number" aria-hidden="true">01</span>
+                        <span class="project-status"><span aria-hidden="true"></span>Live demo</span>
+                    </div>
+                    <p class="project-kicker">API resilience testing</p>
+                    <h2>Smart API Chaos Tester</h2>
+                    <p class="project-description">A safe, local-first tool for running deterministic failure scenarios against an allowlisted API and collecting evidence about how it responds.</p>
+                    <ul class="project-features">
+                        <li>Imports an OpenAPI definition or accepts a configured request;</li>
+                        <li>Simulates HTTP 500/429 responses, timeouts, delays, malformed payloads, connection drops, and authentication failures;</li>
+                        <li>Checks baseline expectations and keeps a history of test runs.</li>
+                    </ul>
+                    <div class="project-meta" aria-label="Technology areas">
+                        <span>API</span><span>Chaos testing</span><span>HTTP/REST</span>
+                    </div>
+                    <p class="project-attribution">Developed by Andrey Shiryavsky</p>
+                    <a class="button button-primary project-link" href="https://smart-api-chaos-tester-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Smart API Chaos Tester live demo in a new tab">Open live demo <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-topline">
+                        <span class="project-number" aria-hidden="true">02</span>
+                        <span class="project-status"><span aria-hidden="true"></span>Live demo</span>
+                    </div>
+                    <p class="project-kicker">Log analysis &amp; bug reporting</p>
+                    <h2>AI Bug Investigator</h2>
+                    <p class="project-description">A privacy-focused QA assistant that analyses text logs locally, finds errors, groups repeated issues, and prepares a structured bug report.</p>
+                    <ul class="project-features">
+                        <li>Accepts UTF-8 text logs up to 5 MB and includes a ready-to-run demo;</li>
+                        <li>Consolidates repeated errors into clearer investigation results;</li>
+                        <li>Can optionally enhance the report with a local Ollama model, without sending the log to a cloud service.</li>
+                    </ul>
+                    <div class="project-meta" aria-label="Technology areas">
+                        <span>Log analysis</span><span>Local AI</span><span>Bug reports</span>
+                    </div>
+                    <p class="project-attribution">Developed by Andrey Shiryavsky</p>
+                    <a class="button button-primary project-link" href="https://ai-bug-investigator-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open AI Bug Investigator live demo in a new tab">Open live demo <span aria-hidden="true">↗</span></a>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

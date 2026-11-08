@@ -77,6 +77,24 @@ a:focus-visible { outline: 3px solid rgba(23, 105, 224, .35); outline-offset: 3p
 }
 .brand-role { color: var(--muted); font-size: .88rem; font-weight: 600; }
 .nav-actions { display: flex; align-items: center; gap: .45rem; }
+.section-tabs {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+}
+.nav-tab {
+    padding: .45rem .72rem;
+    border-radius: 7px;
+    color: var(--muted);
+    font-size: .88rem;
+    font-weight: 750;
+    line-height: 1;
+}
+.nav-tab:hover { color: var(--ink); }
+.nav-tab.is-active { color: var(--accent-dark); background: var(--white); box-shadow: 0 2px 8px rgba(23, 32, 51, .09); }
 .nav-link, .language-link {
     padding: .55rem .65rem;
     border-radius: 8px;
@@ -221,6 +239,51 @@ a:focus-visible { outline: 3px solid rgba(23, 105, 224, .35); outline-offset: 3p
 .experience .asset > p:not(.description):last-of-type { display: inline-block; padding: .35rem .6rem; border-radius: 7px; color: #31517f; background: var(--accent-soft); font-size: .86rem; line-height: 1.45; }
 .experience .resp { margin-top: .25rem; }
 .experience .resp li { margin-bottom: .48rem; font-size: .94rem; }
+
+.projects-shell { min-height: calc(100vh - 132px); }
+.projects-hero {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: clamp(2rem, 5vw, 4.5rem);
+    gap: 2rem;
+    border-radius: var(--radius);
+    color: var(--white);
+    background:
+        radial-gradient(circle at 88% 10%, rgba(85, 214, 139, .23), transparent 18rem),
+        linear-gradient(130deg, rgba(13, 76, 168, .98), rgba(23, 32, 51, .98));
+    box-shadow: var(--shadow);
+}
+.projects-title { margin: 0; font-size: clamp(2.6rem, 7vw, 5.2rem); font-weight: 780; letter-spacing: -.045em; line-height: .95; }
+.projects-intro { max-width: 720px; margin: 1.15rem 0 0; color: #d4deec; font-size: clamp(1rem, 2vw, 1.16rem); }
+.projects-hero .button-secondary { flex: 0 0 auto; border-color: rgba(255, 255, 255, .24); color: var(--white); background: rgba(255, 255, 255, .08); }
+.projects-hero .button-secondary:hover { background: rgba(255, 255, 255, .14); }
+
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 18px; gap: 18px; }
+.project-card {
+    display: flex;
+    min-width: 0;
+    padding: clamp(1.6rem, 3vw, 2.4rem);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: 0 12px 36px rgba(23, 32, 51, .05);
+    flex-direction: column;
+}
+.project-card-topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.65rem; gap: 1rem; }
+.project-number { color: #a8b4c3; font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+.project-status { display: inline-flex; align-items: center; gap: .45rem; color: #346b4b; font-size: .78rem; font-weight: 750; }
+.project-status > span { width: 8px; height: 8px; border-radius: 50%; background: #38b56b; box-shadow: 0 0 0 4px rgba(56, 181, 107, .12); }
+.project-kicker { margin: 0 0 .45rem; color: var(--accent); font-size: .77rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.project-card h2 { margin: 0; color: var(--ink); font-size: clamp(1.45rem, 3vw, 2rem); letter-spacing: -.025em; line-height: 1.15; }
+.project-description { margin: 1rem 0 0; color: #344054; }
+.project-features { margin: 1.25rem 0 0; padding: 1.15rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.project-features li { position: relative; margin: 0 0 .72rem; padding-left: 1.15rem; color: var(--muted); font-size: .94rem; }
+.project-features li::before { position: absolute; top: .68em; left: 0; width: 5px; height: 5px; border-radius: 50%; content: ""; background: var(--accent); }
+.project-meta { display: flex; flex-wrap: wrap; margin: auto 0 0; padding-top: 1rem; gap: .45rem; }
+.project-meta span { padding: .34rem .58rem; border-radius: 999px; color: #31517f; background: var(--accent-soft); font-size: .78rem; font-weight: 700; }
+.project-attribution { margin: 1.1rem 0 .85rem; color: var(--muted); font-size: .86rem; font-weight: 650; }
+.project-link { align-self: flex-start; gap: .5rem; }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
