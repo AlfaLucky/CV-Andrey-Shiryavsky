@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "fixtures": {
+    "checkout.cart": {"screen": "Checkout", "component": "CartSummary", "testValues": {"count": [0, 1, 2, 5, 21]}},
+    "checkout.order": {"screen": "Checkout", "component": "OrderSummary", "testValues": {"orderId": "NS-1042", "amount": "€1,249.00", "date": "2026-11-15"}},
+    "checkout.payment": {"screen": "Checkout", "component": "PaymentForm"},
+    "profile": {"screen": "Profile", "component": "ProfileForm", "testValues": {"firstName": "Samira"}},
+    "settings": {"screen": "Settings", "component": "SettingsPanel", "testValues": {"accountName": "samira@example.test"}}
+  },
+  "keyConstraints": {
+    "checkout.place_order": {"fixture": "checkout.order", "maxCharacters": 32, "singleLine": true},
+    "settings.privacy_notice": {"fixture": "settings", "requiredTags": ["a"]},
+    "checkout.cart.items": {"fixture": "checkout.cart", "icuPlural": true},
+    "checkout.order_number": {"fixture": "checkout.order"},
+    "checkout.total": {"fixture": "checkout.order"},
+    "profile.greeting": {"fixture": "profile"},
+    "profile.saved": {"fixture": "profile"},
+    "profile.email.label": {"fixture": "profile"}
+  }
+}

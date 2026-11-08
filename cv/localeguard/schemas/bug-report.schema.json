@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.test/localeguard/bug-report.schema.json",
+  "title": "LocaleGuard structured bug report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "findingId", "summary", "classification", "severity", "locale", "key", "context", "steps", "expected", "actual", "evidence", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^LOC-[0-9]{3}$"},
+    "findingId": {"type": "string", "pattern": "^F-[0-9]{3}$"},
+    "summary": {"type": "string", "minLength": 1},
+    "classification": {"enum": ["confirmed_error", "heuristic_warning"]},
+    "severity": {"enum": ["critical", "high", "medium", "low"]},
+    "locale": {"type": "string"},
+    "key": {"type": "string"},
+    "context": {
+      "type": "object",
+      "required": ["screen", "component"],
+      "properties": {"screen": {"type": "string"}, "component": {"type": "string"}, "testData": {"type": "object"}}
+    },
+    "steps": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "expected": {"type": "string"},
+    "actual": {"type": "string"},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "recommendation": {"type": "string"},
+    "status": {"enum": ["open", "needs_human_review", "accepted_false_positive", "fixed"]}
+  }
+}

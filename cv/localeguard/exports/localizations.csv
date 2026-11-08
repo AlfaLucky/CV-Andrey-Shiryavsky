@@ -1,0 +1,27 @@
+key,en-US,ru-RU,de-DE,fr-FR,ar-SA
+app.title,Northstar Store,Магазин Northstar,Northstar Store,Boutique Northstar,متجر نورث ستار
+nav.checkout,Checkout,Оформление заказа,Kasse,Paiement,الدفع
+nav.profile,Profile,Профиль,Profil,Profil,الملف الشخصي
+nav.settings,Settings,Настройки,Einstellungen,Paramètres,الإعدادات
+checkout.cart.title,Your cart,Ваша корзина,Ihr Warenkorb,Votre panier,سلة التسوق
+checkout.cart.items,"{count, plural, one {# item} other {# items}}","{count, plural, one {# товар} many {# товаров} other {# товара}}","{count, plural, one {# Artikel} other {# Artikel}}","{count, plural, one {# article} other {# articles}","{count, plural, one {عنصر واحد} other {# عناصر}}"
+checkout.order_number,Order {orderId},Заказ {orderId},Bestellung {orderId},Commande {orderId},الطلب {number}
+checkout.subtotal,Subtotal: {amount},Промежуточный итог: {amount},Zwischensumme: {amount},Sous-total : {amount},المجموع الفرعي: {amount}
+checkout.shipping,Shipping: {amount},Доставка: {amount},Versand: {amount},Livraison : {amount},الشحن: {amount}
+checkout.total,Total: {amount},Итого: {sum},Gesamt: {amount},Total : {amount},الإجمالي: {amount}
+checkout.place_order,Place order,Оформить заказ,Zahlungspflichtige Bestellung jetzt verbindlich abschließen,Passer la commande,تأكيد الطلب
+checkout.payment.card_declined,Your card was declined. Try another payment method.,,Ihre Karte wurde abgelehnt. Versuchen Sie eine andere Zahlungsmethode.,Votre carte a été refusée. Essayez un autre moyen de paiement.,تم رفض بطاقتك. جرّب طريقة دفع أخرى.
+checkout.delivery_eta,Delivery by {date},Доставка до {date},Lieferung bis {date},Livraison avant le {date},التسليم بحلول {date}
+profile.title,Your profile,Ваш профиль,Ihr Profil,Votre profil,ملفك الشخصي
+profile.greeting,"Hello, {firstName}!","Здравствуйте, {firstName}!","Hallo, {firstName}!","Bonjour, {firstName} !",مرحبًا، {firstName}!
+profile.email.label,Email address,Адрес электронной почты,E-Mail-Adresse,E-mail,عنوان البريد الإلكتروني
+profile.email.help,We use your email for receipts and security alerts.,Мы используем вашу почту для чеков и уведомлений безопасности.,Wir verwenden Ihre E-Mail für Belege und Sicherheitshinweise.,Nous utilisons votre courriel pour les reçus et les alertes de sécurité.,نستخدم بريدك للإيصالات وتنبيهات الأمان.
+profile.save,Save changes,Сохранить изменения,Save changes,Enregistrer les modifications,حفظ التغييرات
+profile.saved,Changes saved,Изменения сохранены,Änderungen gespeichert,Modifications enregistrées ,تم حفظ التغييرات
+settings.title,Settings,Настройки,Einstellungen,Paramètres,الإعدادات
+settings.language,Language,Язык,Sprache,Langue,اللغة
+settings.notifications,Notifications,Уведомления,Benachrichtigungen,Notifications,الإشعارات
+settings.marketing_opt_in,Send me product news and offers,Присылать новости о продуктах и предложениях,Senden Sie mir Produktneuigkeiten und Angebote,M’envoyer les actualités et les offres produits,أرسل لي أخبار المنتجات والعروض
+settings.privacy_notice,Read our <a>Privacy Policy</a>,Прочитайте нашу <a>Политику конфиденциальности</a>,Lesen Sie unsere <a>Datenschutzerklärung</a>,Consultez notre Politique de confidentialité,اقرأ <a>سياسة الخصوصية</a>
+settings.delete_account,Delete account,Удалить аккаунт,Konto löschen,Supprimer le compte,حذف الحساب
+settings.delete_confirm,Delete {accountName}? This action cannot be undone.,Удалить {accountName}? Это действие нельзя отменить.,{accountName} löschen? Diese Aktion kann nicht rückgängig gemacht werden.,Supprimer {accountName} ? Cette action est irréversible.,هل تريد حذف {accountName}؟ لا يمكن التراجع عن هذا الإجراء.

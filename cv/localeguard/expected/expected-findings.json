@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": "web-app-v1",
+  "oracleType": "mutation-test-manifest",
+  "findingCount": 12,
+  "summary": {
+    "classification": {"confirmed_error": 8, "heuristic_warning": 4},
+    "severity": {"critical": 2, "high": 5, "medium": 4, "low": 1}
+  },
+  "findings": [
+    {
+      "id": "F-001", "locale": "ru-RU", "key": "checkout.cart.items",
+      "rule": "ICU_MISSING_PLURAL_CATEGORY", "severity": "high", "classification": "confirmed_error",
+      "expected": "Categories: ['few', 'many', 'one', 'other']", "actual": "Missing: ['few']"
+    },
+    {
+      "id": "F-002", "locale": "ru-RU", "key": "checkout.total",
+      "rule": "PLACEHOLDER_MISMATCH", "severity": "critical", "classification": "confirmed_error",
+      "expected": "Placeholders: ['amount']", "actual": "Placeholders: ['sum']"
+    },
+    {
+      "id": "F-003", "locale": "ru-RU", "key": "checkout.payment.card_declined",
+      "rule": "KEY_MISSING", "severity": "high", "classification": "confirmed_error",
+      "expected": "Key exists with a non-empty translation", "actual": "Key is absent"
+    },
+    {
+      "id": "F-004", "locale": "de-DE", "key": "profile.save",
+      "rule": "SOURCE_COPY_SUSPECTED", "severity": "medium", "classification": "heuristic_warning",
+      "expected": "Reviewed target-language translation or explicit allowlist entry", "actual": "Save changes"
+    },
+    {
+      "id": "F-005", "locale": "de-DE", "key": "checkout.place_order",
+      "rule": "UI_LENGTH_RISK", "severity": "medium", "classification": "heuristic_warning",
+      "expected": "At most 32 characters for the fixture", "actual": "59 characters"
+    },
+    {
+      "id": "F-006", "locale": "fr-FR", "key": "checkout.cart.items",
+      "rule": "ICU_UNBALANCED_BRACES", "severity": "high", "classification": "confirmed_error",
+      "expected": "Balanced ICU braces", "actual": "opening=3, closing=2"
+    },
+    {
+      "id": "F-007", "locale": "fr-FR", "key": "profile.saved",
+      "rule": "EDGE_WHITESPACE", "severity": "medium", "classification": "confirmed_error",
+      "expected": "No leading or trailing whitespace", "actual": "'Modifications enregistrées '"
+    },
+    {
+      "id": "F-008", "locale": "fr-FR", "key": "settings.privacy_notice",
+      "rule": "REQUIRED_TAG_MISMATCH", "severity": "high", "classification": "confirmed_error",
+      "expected": "Required tags: ['a']", "actual": "Missing tags: ['a']"
+    },
+    {
+      "id": "F-009", "locale": "fr-FR", "key": "profile.email.label",
+      "rule": "TERMINOLOGY_VARIATION", "severity": "low", "classification": "heuristic_warning",
+      "expected": "Preferred term: adresse e-mail", "actual": "E-mail"
+    },
+    {
+      "id": "F-010", "locale": "ar-SA", "key": "checkout.cart.items",
+      "rule": "ICU_MISSING_PLURAL_CATEGORY", "severity": "high", "classification": "confirmed_error",
+      "expected": "Categories: ['few', 'many', 'one', 'other', 'two', 'zero']", "actual": "Missing: ['few', 'many', 'two', 'zero']"
+    },
+    {
+      "id": "F-011", "locale": "ar-SA", "key": "checkout.order_number",
+      "rule": "PLACEHOLDER_MISMATCH", "severity": "critical", "classification": "confirmed_error",
+      "expected": "Placeholders: ['orderId']", "actual": "Placeholders: ['number']"
+    },
+    {
+      "id": "F-012", "locale": "ar-SA", "key": "profile.greeting",
+      "rule": "RTL_INTERPOLATION_REVIEW", "severity": "medium", "classification": "heuristic_warning",
+      "expected": "Human review or bidi-isolation marks around interpolated LTR content",
+      "actual": "Placeholder appears in an RTL sentence without an allowlist decision"
+    }
+  ]
+}

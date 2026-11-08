@@ -6,6 +6,7 @@
     .about { position: static; }
     .experience { grid-row: 1; }
     .project-grid { grid-template-columns: 1fr; }
+    .project-grid > .project-card:last-child:nth-child(odd) { grid-column: auto; }
 }
 
 @media (max-width: 640px) {

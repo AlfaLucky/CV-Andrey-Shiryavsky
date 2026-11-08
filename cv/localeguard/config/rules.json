@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "baselineLocale": "en-US",
+  "locales": ["ru-RU", "de-DE", "fr-FR", "ar-SA"],
+  "confirmedRules": {
+    "KEY_MISSING": {"severity": "high"},
+    "VALUE_EMPTY": {"severity": "high"},
+    "PLACEHOLDER_MISMATCH": {"severity": "critical"},
+    "ICU_UNBALANCED_BRACES": {"severity": "high"},
+    "ICU_MISSING_PLURAL_CATEGORY": {"severity": "high"},
+    "REQUIRED_TAG_MISMATCH": {"severity": "high"},
+    "EDGE_WHITESPACE": {"severity": "medium"}
+  },
+  "heuristicRules": {
+    "SOURCE_COPY_SUSPECTED": {"severity": "medium", "minimumLetters": 4},
+    "UI_LENGTH_RISK": {"severity": "medium"},
+    "TERMINOLOGY_VARIATION": {"severity": "low"},
+    "RTL_INTERPOLATION_REVIEW": {"severity": "medium"}
+  },
+  "pluralCategories": {
+    "en-US": ["one", "other"],
+    "ru-RU": ["one", "few", "many", "other"],
+    "de-DE": ["one", "other"],
+    "fr-FR": ["one", "other"],
+    "ar-SA": ["zero", "one", "two", "few", "many", "other"]
+  },
+  "rtlLocales": ["ar-SA"],
+  "safeguards": {
+    "sourceCopyAllowlist": ["app.title", "settings.notifications"],
+    "ignoreNonTranslatableTokens": ["Northstar"],
+    "rtlInterpolationAllowlist": ["checkout.subtotal", "checkout.shipping", "checkout.total", "checkout.delivery_eta", "settings.delete_confirm"],
+    "terminologyChecks": {
+      "fr-FR": {
+        "profile.email.label": {"preferred": "adresse e-mail", "disallowed": ["e-mail"]}
+      }
+    }
+  }
+}

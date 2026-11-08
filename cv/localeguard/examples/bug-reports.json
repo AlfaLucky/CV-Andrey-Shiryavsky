@@ -1,0 +1,34 @@
+[
+  {
+    "id": "LOC-002",
+    "findingId": "F-002",
+    "summary": "ru-RU checkout total uses an unknown placeholder",
+    "classification": "confirmed_error",
+    "severity": "critical",
+    "locale": "ru-RU",
+    "key": "checkout.total",
+    "context": {"screen": "Checkout", "component": "OrderSummary", "testData": {"amount": "€1,249.00"}},
+    "steps": ["Set locale to ru-RU", "Open Checkout with a non-empty cart", "Render checkout.total with amount=€1,249.00"],
+    "expected": "Итого: €1,249.00",
+    "actual": "Rendering fails or displays unresolved {sum}",
+    "evidence": ["en-US declares {amount}", "ru-RU declares {sum}", "PLACEHOLDER_MISMATCH is deterministic"],
+    "recommendation": "Replace {sum} with {amount} without changing application code.",
+    "status": "open"
+  },
+  {
+    "id": "LOC-012",
+    "findingId": "F-012",
+    "summary": "Review mixed RTL/LTR rendering of the Arabic profile greeting",
+    "classification": "heuristic_warning",
+    "severity": "medium",
+    "locale": "ar-SA",
+    "key": "profile.greeting",
+    "context": {"screen": "Profile", "component": "ProfileForm", "testData": {"firstName": "Samira-42"}},
+    "steps": ["Set locale to ar-SA", "Open Profile for firstName=Samira-42", "Inspect visual order in supported browsers"],
+    "expected": "The name and punctuation render in the intended visual order.",
+    "actual": "Static analysis cannot prove visual order; isolation may be needed.",
+    "evidence": ["Locale is RTL", "Sentence interpolates potentially LTR user data", "Key has no reviewed allowlist decision"],
+    "recommendation": "Verify in a browser and use bdi/Unicode isolation if the visual order is incorrect.",
+    "status": "needs_human_review"
+  }
+]

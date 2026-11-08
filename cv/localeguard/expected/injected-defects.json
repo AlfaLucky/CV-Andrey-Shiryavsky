@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Human-readable mutation ledger. Every entry must map one-to-one to expected-findings.json.",
+  "mutations": [
+    {"findingId": "F-001", "locale": "ru-RU", "key": "checkout.cart.items", "injection": "Removed the ICU few branch", "safeValue": "{count, plural, one {# товар} few {# товара} many {# товаров} other {# товара}}"},
+    {"findingId": "F-002", "locale": "ru-RU", "key": "checkout.total", "injection": "Renamed {amount} to {sum}", "safeValue": "Итого: {amount}"},
+    {"findingId": "F-003", "locale": "ru-RU", "key": "checkout.payment.card_declined", "injection": "Removed the key", "safeValue": "Ваша карта отклонена. Попробуйте другой способ оплаты."},
+    {"findingId": "F-004", "locale": "de-DE", "key": "profile.save", "injection": "Copied the English source", "safeValue": "Änderungen speichern"},
+    {"findingId": "F-005", "locale": "de-DE", "key": "checkout.place_order", "injection": "Inserted a 59-character label into a 32-character fixture", "safeValue": "Zahlungspflichtig bestellen"},
+    {"findingId": "F-006", "locale": "fr-FR", "key": "checkout.cart.items", "injection": "Removed the final ICU closing brace", "safeValue": "{count, plural, one {# article} other {# articles}}"},
+    {"findingId": "F-007", "locale": "fr-FR", "key": "profile.saved", "injection": "Added trailing whitespace", "safeValue": "Modifications enregistrées"},
+    {"findingId": "F-008", "locale": "fr-FR", "key": "settings.privacy_notice", "injection": "Removed the required <a> tags", "safeValue": "Consultez notre <a>Politique de confidentialité</a>"},
+    {"findingId": "F-009", "locale": "fr-FR", "key": "profile.email.label", "injection": "Used a non-preferred glossary variant", "safeValue": "Adresse e-mail"},
+    {"findingId": "F-010", "locale": "ar-SA", "key": "checkout.cart.items", "injection": "Kept only one and other ICU branches", "safeValue": "Requires zero, one, two, few, many and other branches"},
+    {"findingId": "F-011", "locale": "ar-SA", "key": "checkout.order_number", "injection": "Renamed {orderId} to {number}", "safeValue": "الطلب {orderId}"},
+    {"findingId": "F-012", "locale": "ar-SA", "key": "profile.greeting", "injection": "Left an interpolated LTR name for bidi review", "safeValue": "Human-reviewed isolation strategy or explicit allowlist decision"}
+  ]
+}
